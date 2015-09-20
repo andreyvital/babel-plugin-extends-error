@@ -1,7 +1,6 @@
 /**
  * @author Andrey K. Vital <andreykvital@gmail.com>
  */
-var BASE_ERROR_IDENTIFIER = 'BaseError'
 
 module.exports = function(babel) {
   var t = babel.types
@@ -18,7 +17,7 @@ module.exports = function(babel) {
           return
         }
 
-        var baseError = this.scope.generateUidIdentifier(BASE_ERROR_IDENTIFIER)
+        var baseError = this.scope.generateUidIdentifier('BaseError')
 
         this.insertBefore(
           t.variableDeclaration('var', [
