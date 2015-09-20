@@ -17,20 +17,9 @@ module.exports = function(babel) {
           return
         }
 
-        var baseError = this.scope.generateUidIdentifier('BaseError')
-
-        this.insertBefore(
-          t.variableDeclaration('var', [
-            t.variableDeclarator(
-              baseError,
-              t.callExpression(t.identifier('require'), [
-                t.literal('es6-error')
-              ])
-            )
-          ])
-        )
-
-        node.superClass = baseError
+        node.superClass = t.callExpression(t.identifier('require'), [
+          t.literal('es6-error')
+        ])
 
         return node
       }
