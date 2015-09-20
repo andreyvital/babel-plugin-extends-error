@@ -1,0 +1,11 @@
+{
+  "name": "babel-plugin-extends-error",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {},
+  "main": "babel-plugin-extends-error.js",
+  "authors": [{
+    "name": "Andrey K. Vital",
+    "email": "andreykvital@gmail.com"
+  }]
+}
