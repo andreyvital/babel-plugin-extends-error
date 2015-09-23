@@ -3,12 +3,11 @@
  */
 module.exports = function(babel) {
   var t = babel.types
-  var Plugin = babel.Plugin
 
-  return new Plugin('babel-plugin-extends-error', {
+  return new babel.Plugin('babel-plugin-extends-error', {
     visitor: {
       ClassDeclaration: function(node, parent) {
-        if (! node.superClass) {
+        if (!node.superClass) {
           return
         }
 
