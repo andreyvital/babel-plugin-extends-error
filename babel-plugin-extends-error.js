@@ -1,7 +1,6 @@
 /**
  * @author Andrey K. Vital <andreykvital@gmail.com>
  */
-
 module.exports = function(babel) {
   var t = babel.types
   var Plugin = babel.Plugin
