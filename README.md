@@ -1,4 +1,4 @@
-## `babel-plugin-extends-error`
+## `babel-plugin-extends-error` [![npm version](https://badge.fury.io/js/babel-plugin-extends-error.svg)](http://badge.fury.io/js/babel-plugin-extends-error)
 
 The problem: `extends Error`. The stack trace isn't available when your code is transpiled with babel.
 
