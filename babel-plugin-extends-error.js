@@ -7,11 +7,7 @@ module.exports = function(babel) {
   return new babel.Plugin('babel-plugin-extends-error', {
     visitor: {
       ClassDeclaration: function(node, parent) {
-        if (!node.superClass) {
-          return
-        }
-
-        if (node.superClass.name !== 'Error') {
+        if (node.superClass && node.superClass.name !== 'Error') {
           return
         }
 
