@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-extends-error",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "main": "babel-plugin-extends-error.js",
   "authors": [
     {
